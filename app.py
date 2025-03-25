@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template
+from flask import Flask, render_template, josnify
 
 app = Flask(__name__)
 
@@ -29,6 +29,11 @@ JOBS = [
     'salary': 'Rs. 18,00,000'
   }
 ]
+
+@app.route("/jobs")
+def list_jobs():
+  return josnify(JOBS)
+  
 
 @app.route("/")
 def hello():
