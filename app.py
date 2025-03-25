@@ -6,27 +6,27 @@ app = Flask(__name__)
 JOBS = [
   {
     'id':1,
-    'title': 'Data Analyst',
-    'location': 'Bengaluru, India',
-    'salary': 'Rs. 10,00,000'
+    'title': 'Data Scientist',
+    'location': 'Bangalore, India',
+    'salary': 'Rs. 15,00,000'
   },
   {
     'id':2,
-    'title': 'Data Analyst',
-    'location': 'Bengaluru, India',
-    'salary': 'Rs. 10,00,000'
+    'title': 'Frontend Developer',
+    'location': 'Mumbai, India', 
+    'salary': 'Rs. 12,00,000'
   },
   {
     'id':3,
-    'title': 'Data Analyst',
-    'location': 'Bengaluru, India',
-    'salary': 'Rs. 10,00,000'
+    'title': 'Backend Engineer',
+    'location': 'Delhi, India',
+    'salary': 'Rs. 14,00,000'
   },
   {
     'id':4,
-    'title': 'Data Analyst',
-    'location': 'Bengaluru, India',
-    'salary': 'Rs. 10,00,000'
+    'title': 'Machine Learning Engineer',
+    'location': 'Hyderabad, India',
+    'salary': 'Rs. 18,00,000'
   }
 ]
 
