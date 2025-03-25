@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template, josnify
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -30,9 +30,9 @@ JOBS = [
   }
 ]
 
-@app.route("/jobs")
+@app.route("/api/jobs")
 def list_jobs():
-  return josnify(JOBS)
+  return jsonify(JOBS)
   
 
 @app.route("/")
