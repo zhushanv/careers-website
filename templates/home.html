@@ -10,31 +10,33 @@
         height: 360px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
+    {%include 'nav.html'%}
+    <img class= "img-fluid" id ="banner" src="https://557ffac3-6737-4331-9546-7d6b7da6724c-00-2ylvzlq85w23k.worf.replit.dev/static/image1.jpg">
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Careers</h1>
-      <img class= "img-fluid" id ="banner" src="https://557ffac3-6737-4331-9546-7d6b7da6724c-00-2ylvzlq85w23k.worf.replit.dev/static/image1.jpg">
-      <h2 class="text-center mt-2 mb-4">Introduction</h2>
-      <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <div>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <img src="people.jpg">
+      </div>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-      
-      <p>
-        {% for job in jobs %}
-          {% include 'jobitem.html'%}
-        {% endfor%}
-      </p>
-      
+        <p>
+          {% for job in jobs %}
+            {% include 'jobitem.html'%}
+          {% endfor%}
+        </p>
+
       <div style="text-align:center;">
         <button class="btn btn-primary btn-lg">Contact Us</button>
       </div>
-      <p style="text-align:center;">
-        Copyright 2025, Jovian
-    </div>
-    
-  </body>
+    </div>  
+        {% include 'footer.html'%}
+    </body>
 </html>
+     
